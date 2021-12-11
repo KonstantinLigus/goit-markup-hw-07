@@ -705,8 +705,6 @@ nav {
   color: var(--text-first-color);
   cursor: pointer;
 }
-.checkbox-input {
-}
 .checkbox-icon {
   margin-right: 7px;
   border: 2px solid var(--text-second-color);
