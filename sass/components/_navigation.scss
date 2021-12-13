@@ -1,0 +1,13 @@
+nav {
+  margin-left: 93px;
+}
+.nav-container {
+  display: flex;
+}
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.nav-container > .nav-item:not(:first-child) {
+  margin-left: 50px;
+}

@@ -1,10 +1,17 @@
 @import './utils/variables';
 @import './components/common';
-@import './base/reset';
-@import './utils/visually-hidden';
+@import './components/reset';
+@import './components/visually-hidden';
 @import './components/container';
 @import './components/section';
 
 /* index.html */
 
 /* Header */
+@import './components/header';
+// Navigation
+@import './components/navigation';
+// Logo
+@import './components/logo';
+// link
+@import './components/link';
