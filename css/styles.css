@@ -133,10 +133,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-second-color);
 } */
-.contacts-item:last-child {
+/* .contacts-item:last-child {
   margin-left: 50px;
-}
-.current {
+} */
+/* .current {
   position: relative;
   color: var(--text-third-color);
 }
@@ -149,9 +149,9 @@ img {
   position: absolute;
   bottom: 0;
   border-radius: 2px;
-}
-.link:hover,
-.link:focus,
+} */
+/* .link:hover,
+.link:focus, */
 .footer-link:hover,
 .footer-link:focus,
 .logo:hover,
@@ -160,7 +160,7 @@ img {
 .logo:focus .logo-accent-studio {
   color: var(--text-third-color);
 }
-.contacts-link {
+/* .contacts-link {
   display: flex;
   align-items: center;
   color: var(--text-first-color);
@@ -168,7 +168,7 @@ img {
 .contacts-icon {
   margin-right: 10px;
   fill: currentColor;
-}
+} */
 
 /* Main */
 
