@@ -1,0 +1,9 @@
+.address-set {
+  margin-top: 20px;
+}
+.address-item:not(:first-child) {
+  margin-top: 9px;
+}
+.address-link {
+  color: var(--text-fifth-color);
+}

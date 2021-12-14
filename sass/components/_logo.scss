@@ -8,8 +8,16 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--text-second-color);
-}
 
-.logo-accent {
-  color: var(--text-third-color);
+  &-accent,
+  &:hover,
+  &:focus,
+  &:hover &-accent-studio,
+  &:focus &-accent-studio {
+    color: var(--text-third-color);
+  }
+}
+.logo-accent-studio {
+  color: var(--text-fifth-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

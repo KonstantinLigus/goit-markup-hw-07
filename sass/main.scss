@@ -7,10 +7,36 @@
 
 /* index.html */
 
-/* Header */
+// Header
 @import './components/header';
 @import './components/navigation';
 @import './components/logo';
 @import './components/link';
 @import './components/contacts';
 @import './components/current';
+
+// Main
+@import './components/hero';
+@import './components/hero-button';
+@import './components/advantages-set';
+@import './components/our-work-set';
+@import './components/our-team-set';
+@import './components/clients-set';
+
+// Header
+@import './components/footer';
+@import './components/logo-address-container';
+@import './components/address-set';
+@import './components/address-join-container';
+@import './components/join-container';
+@import './components/join-set';
+@import './components/sign-form';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/is-hidden';
+@import './components/callback-form';
+
+/* Portfolio */
+
+@import './components/exemples-button';
+@import './components/exemples-set';
