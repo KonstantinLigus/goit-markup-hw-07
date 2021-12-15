@@ -24,33 +24,37 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container header-container">
+      <div class="container header__container">
         <!-- Логотип сайта -->
-        <a href="" class="logo"><span class="logo-accent">Web</span>Studio</a>
+        <a href="" class="logo"><span class="logo__accent">Web</span>Studio</a>
         <!-- Навигация, телефон, нотакты -->
         <!-- Основной блок навигации -->
-        <nav>
-          <ul class="nav-container">
-            <li class="nav-item"><a href="" class="link current">Студия</a></li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+        <nav class="navigation">
+          <ul class="navigation-set">
+            <li class="navigation-set__item">
+              <a href="" class="navigation-set__link navigation-set__link--current">Студия</a>
             </li>
-            <li class="nav-item"><a href="" class="link">Контакты</a></li>
+            <li class="navigation-set__item">
+              <a href="./portfolio.html" class="navigation-set__link">Портфолио</a>
+            </li>
+            <li class="navigation-set__item">
+              <a href="" class="navigation-set__link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <!-- Телефон и e-mail -->
-        <ul class="header-contacts">
-          <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="link contacts-link">
-              <svg width="16" height="12" class="contacts-icon">
+        <ul class="contacts-set">
+          <li class="contacts-set__item">
+            <a href="mailto:info@devstudio.com" class="contacts-set__link">
+              <svg width="16" height="12" class="contacts-set__icon">
                 <use href="./images/new-sprite.svg#icon-envelope"></use>
               </svg>
               <span> info@devstudio.com</span>
             </a>
           </li>
-          <li class="contacts-item">
-            <a href="tel:+380961111111" class="link contacts-link">
-              <svg width="10" height="16" class="contacts-icon">
+          <li class="contacts-set__item">
+            <a href="tel:+380961111111" class="contacts-set__link">
+              <svg width="10" height="16" class="contacts-set__icon">
                 <use href="./images/new-sprite.svg#icon-phone"></use>
               </svg>
               <span>+380 961 111 111</span>
@@ -65,8 +69,8 @@
       <!-- Заголовок страницы -->
       <section class="hero">
         <div>
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Особенности компаниии -->
@@ -74,8 +78,8 @@
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages-set">
-            <li class="advantages-item">
-              <div class="container-advantages-icon">
+            <li class="advantages-set__item">
+              <div class="advantages__container-icon">
                 <svg width="70" height="70" class="advantages-icon">
                   <use href="./images/new-sprite.svg#icon-antena"></use>
                 </svg>
@@ -86,8 +90,8 @@
               </p>
             </li>
 
-            <li class="advantages-item">
-              <div class="container-advantages-icon">
+            <li class="advantages-set__item">
+              <div class="advantages__container-icon">
                 <svg width="70" height="70" class="advantages-icon">
                   <use href="./images/new-sprite.svg#icon-time"></use>
                 </svg>
@@ -98,8 +102,8 @@
               </p>
             </li>
 
-            <li class="advantages-item">
-              <div class="container-advantages-icon">
+            <li class="advantages-set__item">
+              <div class="advantages__container-icon">
                 <svg width="70" height="70" class="advantages-icon">
                   <use href="./images/new-sprite.svg#icon-computer"></use>
                 </svg>
@@ -110,8 +114,8 @@
               </p>
             </li>
 
-            <li class="advantages-item">
-              <div class="container-advantages-icon">
+            <li class="advantages-set__item">
+              <div class="advantages__container-icon">
                 <svg width="70" height="70">
                   <use href="./images/new-sprite.svg#icon-astronaut" class="advantages-icon"></use>
                 </svg>
@@ -371,7 +375,7 @@
       <div class="container address-join-container">
         <div class="logo-address-container">
           <a href="" class="logo"
-            ><span class="logo-accent">Web</span><span class="logo-accent-studio">Studio</span></a
+            ><span class="logo__accent">Web</span><span class="logo__accent-studio">Studio</span></a
           >
           <address class="address">
             <ul class="address-set">
