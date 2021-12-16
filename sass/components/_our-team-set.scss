@@ -1,27 +1,42 @@
-.our-team,
-.container-advantages-icon {
+.our-team {
   background-color: var(--advantages-our-team-color);
 }
-.our-team-item {
+.our-team__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-second-color);
+}
+.our-team-set {
+  display: flex;
+  margin: 0;
+  margin-right: -30px;
+}
+.our-team-set__item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
   background: var(--header-hero-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.our-team-member {
+.our-team-set__member {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.container-team-icon {
+.social-icons-set {
   margin-top: 16px;
   display: flex;
   justify-content: center;
 }
-.team-item {
+.social-icons-set__item {
   height: 44px;
   width: 44px;
 }
-.team-link {
+.social-icons-set__link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
@@ -30,36 +45,38 @@
   height: 100%;
   border-radius: 50%;
   color: var(--accent-link-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--link-hover-color);
+  }
 }
-.team-icon {
+.social-icons-set__icon {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
-}
-.team-link:hover .team-icon,
-.team-link:focus .team-icon {
-  color: var(--text-fifth-color);
-}
-.team-link:hover,
-.team-link:focus {
-  background-color: var(--link-hover-color);
-}
 
-.team-item + .team-item {
+  .social-icons-set__link:hover &,
+  .social-icons-set__link:focus & {
+    color: var(--text-fifth-color);
+  }
+}
+.social-icons-set__item + .social-icons-set__item {
   margin-left: 10px;
 }
-.our-team-text {
+.our-team-set__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
   margin-top: 10px;
+  color: var(--text-first-color);
 }
-.our-team-title,
-.our-team-text {
+.our-team-set__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-second-color);
-}
-.our-team-text {
-  font-weight: 400;
-  color: var(--text-first-color);
 }

@@ -1,11 +1,9 @@
-.advantages-set,
-.our-team-set {
+.advantages-set {
   display: flex;
   margin: 0;
   margin-right: -30px;
 }
-.advantages-set__item,
-.our-team-item {
+.advantages-set__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
 }
@@ -16,9 +14,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--advantages-our-team-color);
 }
 
-.advantages-title {
+.advantages-set__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -26,12 +25,9 @@
   text-transform: uppercase;
   color: var(--text-second-color);
 }
-.advantages-text,
-.footer-link {
+.advantages-set__text {
+  margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-.advantages-text {
-  margin-top: 10px;
 }

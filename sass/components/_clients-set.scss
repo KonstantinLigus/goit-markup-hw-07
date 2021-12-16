@@ -1,16 +1,25 @@
+.clients__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-second-color);
+}
 .clients-set {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.clients-item {
+.clients-set__item {
   width: 170px;
   height: 92px;
 }
-.clients-item + .clients-item {
+.clients-set__item + .clients-set__item {
   margin-left: 30px;
 }
-.clients-link {
+.clients-set__link {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
@@ -20,17 +29,18 @@
   color: var(--accent-link-color);
   border: 1px solid var(--accent-link-color);
   border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--link-hover-color);
+  }
 }
-.clients-icon {
+.clients-set__icon {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
-}
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--link-hover-color);
-}
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  color: var(--link-hover-color);
+  .clients-set__link:hover &,
+  .clients-set__link:focus & {
+    color: var(--link-hover-color);
+  }
 }
