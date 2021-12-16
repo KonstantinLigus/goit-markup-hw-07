@@ -522,12 +522,7 @@ ul {
   background-color: var(--footer-hero-bg-color);
 }
 
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--text-third-color);
-}
-
-.address-join-container {
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,7 +537,15 @@ ul {
           flex-grow: 1;
 }
 
-.footer-link {
+.address-set {
+  margin-top: 20px;
+}
+
+.address-set__item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.address-set__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -555,23 +558,19 @@ ul {
   color: var(--text-first-color);
 }
 
-.address-set {
-  margin-top: 20px;
+.address-set__link:hover, .address-set__link:focus {
+  color: var(--text-third-color);
 }
 
-.address-item:not(:first-child) {
-  margin-top: 9px;
-}
-
-.address-link {
+.address-set__link--accent {
   color: var(--text-fifth-color);
 }
 
-.join-container {
+.join {
   margin-left: 70px;
 }
 
-.join-text {
+.join__text {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -588,16 +587,16 @@ ul {
   margin-top: 20px;
 }
 
-.join-item {
+.join-set__item {
   height: 44px;
   width: 44px;
 }
 
-.join-item + .join-item {
+.join-set__item + .join-set__item {
   margin-left: 10px;
 }
 
-.join-link {
+.join-set__link {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-box;
@@ -616,18 +615,17 @@ ul {
   color: var(--text-fifth-color);
 }
 
-.join-icon {
+.join-set__link:hover, .join-set__link:focus {
+  background-color: var(--link-hover-color);
+}
+
+.join-set__icon {
   fill: currentColor;
 }
 
-.join-link:hover .team-icon,
-.join-link:focus .team-icon {
+.join-set__link:hover .join-set__icon,
+.join-set__link:focus .join-set__icon {
   color: var(--text-fifth-color);
-}
-
-.join-link:hover,
-.join-link:focus {
-  background-color: var(--link-hover-color);
 }
 
 .sign-form {
@@ -640,7 +638,7 @@ ul {
   margin-left: 93px;
 }
 
-.sign-label {
+.sign-form__label {
   width: 358px;
   margin-right: 12px;
   font-weight: 700;
@@ -651,7 +649,7 @@ ul {
   color: var(--text-fifth-color);
 }
 
-.sign-input {
+.sign-form__input {
   width: 358px;
   height: 50px;
   margin-top: 20px;
@@ -668,7 +666,7 @@ ul {
   border-radius: 4px;
 }
 
-.sign-input::-webkit-input-placeholder {
+.sign-form__input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -680,7 +678,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.sign-input:-ms-input-placeholder {
+.sign-form__input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -692,7 +690,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.sign-input::-ms-input-placeholder {
+.sign-form__input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -704,7 +702,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.sign-input::placeholder {
+.sign-form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -718,7 +716,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.sign-button {
+.sign-form__button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -744,7 +742,7 @@ ul {
   background-color: var(--link-hover-color);
 }
 
-.sign-button-icon {
+.sign-form__button-icon {
   margin-left: 10px;
   fill: currentColor;
 }
@@ -774,7 +772,7 @@ ul {
   border-radius: 4px;
 }
 
-.modal-close {
+.modal__close-button {
   padding: 0;
   margin: 0;
   position: absolute;
@@ -799,13 +797,12 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-icon {
-  fill: currentColor;
+.modal__close-button:hover, .modal__close-button:focus {
+  color: var(--link-hover-color);
 }
 
-.modal-close:hover,
-.modal-close:focus {
-  color: var(--link-hover-color);
+.modal__close-icon {
+  fill: currentColor;
 }
 
 .is-hidden {
@@ -819,7 +816,7 @@ ul {
   padding: 40px;
 }
 
-.callback-form-title {
+.callback-form__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -829,7 +826,7 @@ ul {
   color: var(--text-second-color);
 }
 
-.callback-form-label {
+.callback-form__label {
   display: block;
   cursor: pointer;
   font-weight: 400;
@@ -839,18 +836,18 @@ ul {
   color: var(--text-first-color);
 }
 
-.callback-form-label + .callback-form-label {
+.callback-form__label + .callback-form__label {
   margin-top: 10px;
 }
 
-.callback-form-group {
+.callback-form__group {
   display: block;
   position: relative;
   margin-top: 4px;
   color: var(--text-second-color);
 }
 
-.callback-form-input {
+.callback-form__input {
   cursor: pointer;
   display: block;
   margin: 0;
@@ -873,13 +870,13 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.callback-form-input:focus,
-.callback-form-comment:focus {
+.callback-form__input .callback-form__input:focus,
+.callback-form__input .callback-form__comment:focus {
   border-color: var(--link-hover-color);
   outline: none;
 }
 
-.callback-form-comment {
+.callback-form__comment {
   display: block;
   margin-top: 4px;
   padding-right: 16px;
@@ -902,7 +899,7 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.callback-form-comment::-webkit-input-placeholder {
+.callback-form__comment::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -910,7 +907,7 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.callback-form-comment:-ms-input-placeholder {
+.callback-form__comment:-ms-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -918,7 +915,7 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.callback-form-comment::-ms-input-placeholder {
+.callback-form__comment::-ms-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -926,7 +923,7 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.callback-form-comment::placeholder {
+.callback-form__comment::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -934,7 +931,7 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.callback-input-icon {
+.callback-form__icon {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%) translateX(12px);
@@ -944,11 +941,11 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.callback-form-input:focus + .callback-input-icon {
+.callback-form__input:focus + .callback-form__icon {
   fill: var(--link-hover-color);
 }
 
-.checkbox-label {
+.callback-form__checkbox-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -967,7 +964,7 @@ ul {
   cursor: pointer;
 }
 
-.checkbox-icon {
+.callback-form__checkbox-icon {
   margin-right: 7px;
   border: 2px solid var(--text-second-color);
   border-radius: 2px;
@@ -975,12 +972,12 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-input:checked + .checkbox-icon {
+.callback-form__checkbox-input:checked + .callback-form__checkbox-icon {
   border-color: var(--link-hover-color);
   background-color: var(--link-hover-color);
 }
 
-.callback-button {
+.callback-form__callback-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1011,13 +1008,12 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.callback-button:hover,
-.callback-button:focus {
+.callback-form__callback-button:hover, .callback-form__callback-button:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.policy {
+.callback-form__policy {
   padding-left: 4px;
   color: var(--text-third-color);
 }
