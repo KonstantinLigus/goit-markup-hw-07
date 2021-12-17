@@ -2,9 +2,7 @@
   padding-top: 0;
 }
 .our-work-set {
-  display: flex;
-  margin: 0;
-  margin-right: -30px;
+  @extend %set;
 }
 .our-work__title {
   margin-bottom: 50px;

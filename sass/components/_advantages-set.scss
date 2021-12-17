@@ -1,11 +1,8 @@
 .advantages-set {
-  display: flex;
-  margin: 0;
-  margin-right: -30px;
+  @extend %set;
 }
 .advantages-set__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-right: 30px;
+  @extend %set-item;
 }
 .advantages__container-icon {
   height: 120px;
