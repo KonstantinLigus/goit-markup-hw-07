@@ -1,14 +1,5 @@
-.our-team {
+.section--bg-color {
   background-color: var(--advantages-our-team-color);
-}
-.our-team__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-second-color);
 }
 .our-team-set {
   @extend %set;
@@ -20,7 +11,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.our-team-set__member {
+.our-team-set__wrap {
   padding-top: 30px;
   padding-bottom: 30px;
 }
